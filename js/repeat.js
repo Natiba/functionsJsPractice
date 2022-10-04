@@ -14,19 +14,21 @@ let repNumber = parseInt(prompt("Enter a number, please"));
 let repMessage = document.querySelector("#repeatMessage");
 
 let repArray = [];
+let repJoinArray = [];
 
 // str.repeat(count)
 
 function repeat(value, number) {
-repArray.push(value.repeat(number));
-repArray.join("-");
-console.log(repArray);
+  repArray.push(value.repeat(number));
+  
+  for (let i = 0; i < repNumber; i++) {
+    repJoinArray = repArray.join(" - "); // no logro dividirlos ','
+    console.log(repJoinArray);
+  }
 
-return repArray;
+  return repArray;
 }
 
 repMessage.innerHTML = `
 ${repeat(repValue, repNumber)}
-`
-
-// no logro dividirlos ','
+`;
