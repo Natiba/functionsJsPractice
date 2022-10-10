@@ -4,8 +4,49 @@
     box-sizing: border-box;
   }
 
+body {
+  background: rgb(158, 234, 216)
+}
   
   h1 {
     text-align: center;
-    color: red
+    color: rgb(226, 107, 199);
+    padding: 2% 0 4%
+  }
+
+  h2 {
+    color: rgb(49, 169, 141);
+    padding-bottom: 6%;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  .contFunc1, .contFunc2 {
+    padding: 2%;
+    border: 2px solid rgb(49, 169, 141);
+    width: 40%;
+    
+  }
+
+  ol li a {
+    text-decoration: none;
+    color: #fff;
+    
+  }
+
+  ol {
+    width: 60%;
+    align-items: left;
+    color: #fff;
+    font-size: 1.6em;
+    padding: 6%
+  }
+
+  a:hover {
+color: gray
   }
