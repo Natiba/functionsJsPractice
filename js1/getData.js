@@ -10,8 +10,4 @@ function getData (city, population, country) {
      return fullDirection
 }
 
-//obtenerDatosDeCiudad('Santa Fe', 545606, 'Argentina') // 'La ciudad de Santa
-//Fe tiene una población de 545606 habitantes y está ubicada en Argentina'
-
-//getData('Santa Fe', 545606, 'Argentina')
 getData(cityUser, populationUser, countryUser)
