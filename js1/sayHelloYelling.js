@@ -8,6 +8,8 @@ console.log(sayHi2)
 const scream2 = scream(sayHi2)
 console.log(scream2)
 
+let sayMessage = document.querySelector("#say").textContent = scream2;
+
 
 function getFullName(name, lastname) {
     let fullName = name.concat(" ", lastname)
@@ -15,7 +17,7 @@ function getFullName(name, lastname) {
     }
 
 function sayHi (name) {
-    let greeting = `'Hi ${name}, nice to meet you'`;
+    let greeting = `Hi ${name}, nice to meet you`;
     return greeting
 }
 
