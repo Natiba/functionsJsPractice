@@ -2,8 +2,8 @@ let scoreMessage = document.querySelector("#scoreMessage");
 
 let sumScore;
 
-function calculateScore(easy, medium, hard) {
-  sumScore = easy * 3 + medium * 5 + hard * 10;
+function calculateScore(easy, normal, hard) {
+  sumScore = easy * 3 + normal * 5 + hard * 10;
   scoreMessage.innerHTML += `${sumScore} <br></br>`;
 }
 
