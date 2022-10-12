@@ -7,18 +7,22 @@
     <title>Calculate Score</title>
   </head>
   <body>
-    <h1>haceFrio(temperatura)</h1>
+    <h1>calcularPuntaje(facil, normal, dificil)</h1>
     <p>
-        Crear una función haceCalor que tome como argumento un número temperatura y
-devuelva true si hace frio (12 grados o menos) o false de lo contrario
+      Crear una función calcularPuntaje que calcule el puntaje de un examen que
+      consiste en ejercicios de distinto nivel. Debe tomar como argumento tres que
+      consisten en la cantidad de ejercicios resueltos en cada nivel y devolver un número con el puntaje correspondiente. El puntaje se calcula de la siguiente forma:
     </p>
-    <p>haceFrio(12) // true</p>
-    <p>haceFrio(22) // false</p>
-    <p>haceFrio(3) // true</p>
-    <p>haceFrio(-2) // true</p>
+    <p>facil: 3 puntos</p>
+    <p>normal: 5 puntos</p>
+    <p>dificil: 10 puntos</p>
 
-    <h3 id="cold"></h3>
+    <p>calcularPuntaje(3, 0, 0) // 9</p>
+    <p>calcularPuntaje(0, 2, 1) // 20</p>
+    <p>calcularPuntaje(5, 1, 2) // 40</p>
 
-    <script src="../js1/cold.js"></script>
+    <h3 id="scoreMessage"></h3>
+
+    <script src="../js1/score.js"></script>
   </body>
 </html>
