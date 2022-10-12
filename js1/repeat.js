@@ -29,6 +29,8 @@ let repJoinArray = [];
 //   return repArray;
 // }
 
+// No usé la función 'repeat' porque crea un string, opté por un clásico for que modifica el array.
+
 function repeat(value, number) {
   for (let i = 0; i < number; i++) {
     repArray.push(value);
@@ -38,5 +40,12 @@ function repeat(value, number) {
   return repArray;
 }
 
-repMessage.innerHTML = `[${repeat(repValue, repNumber)}]
+// Puede considerarse 'trampa', pero esto devuelve lo más parecido al resultado, sin espacios luego de la coma.
+// repMessage.innerHTML = `[${repeat(repValue, repNumber)}]
+// `;
+
+// Éste, usando un map, devuelve lo que buscamos con un espacio extra al principio.
+repMessage.innerHTML = `[${repeat(repValue, repNumber).map((item) => {
+  return ` ${item}`;
+})}]
 `;
