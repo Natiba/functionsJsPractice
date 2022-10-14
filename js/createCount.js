@@ -17,6 +17,19 @@ countdown = [];
 createCountdown(3)
 createCountdown(5) 
 
-//Highest to lowest
-//let highestToLowest = numbers.sort((a, b) => b-a);
-//Output: [500,44,32,15,13,5,1]
+/* ANOTHER WAY TO DO THE SAME */
+
+function createCountdown2 (initialNumber) {
+    for (let i = 0; i <= initialNumber; i++) {
+    countdown.push(i);
+    console.log(countdown);
+    
+
+    let highestToLowest = countdown.sort((a, b) => b-a);
+    
+    }
+    countMess.innerHTML += `${countdown} <br></br>`;
+    countdown = [];
+    }
+    createCountdown(3)
+    createCountdown(5) 
