@@ -18,6 +18,7 @@ let repJoinArray = [];
 
 // str.repeat(count)
 
+/*
 function repeat(value, number) {
   repArray.push(value.repeat(number));
   
@@ -27,6 +28,20 @@ function repeat(value, number) {
   }
 
   return repArray;
+} */
+
+// No usé la función 'repeat' porque crea un string, opté por un clásico for que modifica el array. (Diestro sic)
+
+function repeat(value, number) {
+  for (let i = 0; i < number; i++) {
+    repArray.push(value);
+    //repJoinArray = repArray.join(",  ") if I need this divided by comma and space :)
+  }
+
+  console.log(repArray);
+  //console.log(repJoinArray);
+  //return  repJoinArray ;
+  return repArray
 }
 
 repMessage.innerHTML = `
