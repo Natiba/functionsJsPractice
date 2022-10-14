@@ -1,14 +1,11 @@
 
-let myArray = [];
+let invertMessage = document.querySelector("#invertMessage");
 
 function invert (array) {
-    for (let i = 0; i < array.length; i++) {
-        myArray.push([i]);
-        myArray.reverse(array);
-        console.log(myArray)
-        return myArray;
-    }
-   
+    let reversed = array.reverse();
+    invertMessage.innerHTML += `reversed: ${reversed} <br></br>`;
+    return reversed;
 }
 
-invert([1, 2, 3])
+console.log(invert([1, 2, 3]));
+console.log(invert([5, 7, 99, 34, 54, 2, 12]));

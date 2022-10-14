@@ -24,3 +24,4 @@ addOdds(47); // da 576
 // Porque me las esta sumandoooooooooooooo
 // Si habilito las 3 llamadas, las suma entre si
 // El error era no volver la variable sum a cero para que vuelva a comenzar
+// Ahora si Funciona
